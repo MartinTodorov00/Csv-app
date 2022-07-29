@@ -4,6 +4,7 @@ import org.acme.DTO.PersonDTO;
 import org.acme.entities.Person;
 import org.acme.services.PersonMapper;
 import org.acme.services.PersonServices;
+import org.acme.services.PersonServicesImpl;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
@@ -14,7 +15,7 @@ import java.util.List;
 
 public class Route extends RouteBuilder {
 
-    PersonServices personServices;
+    PersonServices personServices = new PersonServicesImpl();
 
     @Override
     public void configure() throws Exception {
