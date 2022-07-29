@@ -1,6 +1,5 @@
 package org.acme.services;
 
-import org.acme.DTO.PersonDTO;
 import org.acme.entities.Person;
 import org.acme.repositories.StoreDataRepository;
 
@@ -8,6 +7,7 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.transaction.Transactional;
 
+@ApplicationScoped
 public class PersonServicesImpl implements PersonServices {
 
     @Inject

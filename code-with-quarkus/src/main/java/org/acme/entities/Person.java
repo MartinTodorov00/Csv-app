@@ -1,7 +1,5 @@
 package org.acme.entities;
 
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -22,10 +20,6 @@ public class Person {
 
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getUsername() {
